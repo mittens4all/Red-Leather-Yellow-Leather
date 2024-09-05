@@ -82,7 +82,7 @@ leather_boots
 |  Pink    | #F38BAA | 15961002 |  (243, 139, 170)  |  0.95294124* |  0.54509804  |  0.66666667  |
 |  Undyed  | #A06540 | 10511680 |  (160, 101,  64)  |  0.62745099  |  0.39607846  |  0.25098039  |
 
-Note: The RGB / 255 values are for exact matches in molang function query_armor_color_slot.
+Note: The RGB / 255 values are for exact matches in molang function query.armor_color_slot.
 Some values round up and are not consistent with how other numbers round.
 
 \* Some colors do not have exact matches due to recurring decimals:
