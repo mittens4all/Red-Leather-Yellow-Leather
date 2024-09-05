@@ -3,6 +3,8 @@
 
 This behavior pack detects the color of dyed leather armor and converts the color to a scoreboard. You can then run your own commands using the score parameter as part of your target selector.
 
+This behavior pack uses the player.json to run animation controllers. It may conflict with other packs that use player.json.
+
 ## Installing the pack:
 
 Add the Red Leather Yellow Leather Add-on to your behavior packs on your world. Behavior packs disable achievements, but editing the world with an NBT editor can re-enable achievements when uploading your world to a realm.
