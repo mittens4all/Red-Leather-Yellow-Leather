@@ -183,8 +183,6 @@ The following example are molang queries for dyed leather helmets.
 - [Zombieclinic](http://www.youtube.com/@zombieclinic6753)
 - [Guppyduck](http://www.youtube.com/@Guppyduck0)
 
-- Made for Sylvester Stewart in Guppyduck's Command Central Discord
-
 ```js
        _                              _     _       _ _  
       (_)  _     _                   | |   (_)     | | | 
