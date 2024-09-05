@@ -64,17 +64,17 @@ leather_boots
 |  :----   | :-----: | -------: | :---------------: | :---------:  | :----------: | :----------: |
 |  White   | #F0F0F0 | 15790320 |  (240, 240, 240)  |  0.94117653  |  0.94117653  |  0.94117653  |
 |  L.Gray  | #9D9D97 | 10329495 |  (157, 157, 151)  |  0.61568627  |  0.61568627  |  0.59215686  |
-|  Gray    | #474F52 |  4673362 |  ( 71,  79,  82)  |  0.27843138  |  0.30980392  |  0.32156863  |
-|  Black   | #1D1D21 |  1908001 |  ( 29,  29,  33)  |  0.11372550  |  0.11372550  |  0.12941177  |
+|  Gray    | #474F52 |  4673362 |   (71,  79,  82)  |  0.27843138  |  0.30980392  |  0.32156863  |
+|  Black   | #1D1D21 |  1908001 |   (29,  29,  33)  |  0.11372550  |  0.11372550  |  0.12941177  |
 |  Brown   | #835432 |  8606770 |  (131,  84,  50)  |  0.51372550  |  0.32941176  |  0.19607846* |
 |  Red     | #B02E26 | 11546150 |  (176,  46,  38)  |  0.69019608  |  0.18039216  |  0.14901961  |
 |  Orange  | #F9801D | 16351261 |  (249, 128,  29)  |  0.97647061  |  0.50196078  |  0.11372550  |
 |  Yellow  | #FED83D | 16701501 |  (254, 216,  61)  |  0.99607845  |  0.84705884  |  0.23921570  |
 |  Lime    | #80C71F |  8439583 |  (128, 199,  31)  |  0.50196078  |  0.78039221  |  0.12156864* |
-|  Green   | #5E7C16 |  6192150 |  ( 94, 124,  22)  |  0.36862747* |  0.48627454* |  0.08627451  |
-|  Cyan    | #169C9C |  1481884 |  ( 22, 156, 156)  |  0.08627451  |  0.61176471  |  0.61176471  |
-|  L.Blue  | #3AB3DA |  3847130 |  ( 58, 179, 218)  |  0.22745099  |  0.70196078  |  0.85490197  |
-|  Blue    | #3C44AA |  3949738 |  ( 60,  68, 170)  |  0.23529414  |  0.26666667  |  0.66666667  |
+|  Green   | #5E7C16 |  6192150 |   (94, 124,  22)  |  0.36862747* |  0.48627454* |  0.08627451  |
+|  Cyan    | #169C9C |  1481884 |   (22, 156, 156)  |  0.08627451  |  0.61176471  |  0.61176471  |
+|  L.Blue  | #3AB3DA |  3847130 |   (58, 179, 218)  |  0.22745099  |  0.70196078  |  0.85490197  |
+|  Blue    | #3C44AA |  3949738 |   (60,  68, 170)  |  0.23529414  |  0.26666667  |  0.66666667  |
 |  Purple  | #8932B8 |  8991416 |  (137,  50, 184)  |  0.53725491  |  0.19607846* |  0.72156863  |
 |  Magenta | #C74EBD | 13061821 |  (199,  78, 189)  |  0.78039221  |  0.30588235  |  0.74117647  |
 |  Pink    | #F38BAA | 15961002 |  (243, 139, 170)  |  0.95294124* |  0.54509804  |  0.66666667  |
@@ -82,14 +82,33 @@ leather_boots
 
 Note: The RGB / 255 values are for exact matches in molang function query_armor_color_slot.
 Some values round up and are not consistent with how other numbers round.
-Some colors do not have exact matches due to recurring decimals:
 
-*  Brown B / 255 value: q.armor_color_slot(0,2) > 0.196078459 && q.armor_color_slot(0,2) < 0.196078460
-*   Lime B / 255 value: q.armor_color_slot(0,2) > 0.121568639 && q.armor_color_slot(0,2) < 0.12156864
-*  Green R / 255 value: q.armor_color_slot(0,0) > 0.368627469 && q.armor_color_slot(0,0) < 0.36862747
-*  Green G / 255 value: q.armor_color_slot(0,1) > 0.486274539 && q.armor_color_slot(0,1) < 0.48627454
-* Purple G / 255 value: q.armor_color_slot(0,1) > 0.196078459 && q.armor_color_slot(0,1) < 0.19607846
-*   Pink R / 255 value: q.armor_color_slot(0,0) > 0.952941239 && q.armor_color_slot(0,0) < 0.95294124
+\* Some colors do not have exact matches due to recurring decimals:
+
+<li>Brown B / 255 value:</li>
+          <ul>
+               q.armor_color_slot(0,2) > 0.196078459 && q.armor_color_slot(0,2) < 0.196078460
+          </ul>
+<li>Lime B / 255 value:</li>
+          <ul>
+               q.armor_color_slot(0,2) > 0.121568639 && q.armor_color_slot(0,2) < 0.12156864
+          </ul>
+<li>Green R / 255 value:</li>
+          <ul>
+               q.armor_color_slot(0,0) > 0.368627469 && q.armor_color_slot(0,0) < 0.36862747
+          </ul>
+<li>Green G / 255 value:</li>
+          <ul>
+               q.armor_color_slot(0,1) > 0.486274539 && q.armor_color_slot(0,1) < 0.48627454
+          </ul>
+<li>Purple G / 255 value:</li>
+          <ul>
+               q.armor_color_slot(0,1) > 0.196078459 && q.armor_color_slot(0,1) < 0.19607846 
+          </ul>
+<li>Pink R / 255 value:</li>
+          <ul>
+               q.armor_color_slot(0,0) > 0.952941239 && q.armor_color_slot(0,0) < 0.95294124
+          </ul>
 
 ## Molang Query
 
