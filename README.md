@@ -56,7 +56,7 @@ leather_boots
 | [scores=12]  | light_blue leather |
 | [scores=13]  |       blue leather |
 | [scores=14]  |     purple leather |
-| [scores=16]  |    magenta leather |
+| [scores=15]  |    magenta leather |
 | [scores=16]  |       pink leather |
 | [scores=-1]  |     undyed leather |
 
