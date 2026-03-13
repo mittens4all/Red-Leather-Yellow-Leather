@@ -1,0 +1,202 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.leather_chestplate": {
+			"initial_state": "no_matching_chestplate",
+			"states": {
+				"no_matching_chestplate": {
+					"on_entry": ["/scoreboard players set @s leather_chestplate 0"],
+					"transitions": [
+						{
+							"white_chestplate": "q.armor_texture_slot(1) == 0 && q.armor_color_slot(1,0) == 0.94117653 && q.armor_color_slot(1,1) == 0.94117653 && q.armor_color_slot(1,2) == 0.94117653"
+						},
+						{
+							"light_gray_chestplate": "q.armor_texture_slot(1) == 0 && q.armor_color_slot(1,0) == 0.61568627 && q.armor_color_slot(1,1) == 0.61568627 && q.armor_color_slot(1,2) == 0.59215686"
+						},
+						{
+							"gray_chestplate": "q.armor_texture_slot(1) == 0 && q.armor_color_slot(1,0) == 0.27843138 && q.armor_color_slot(1,1) == 0.30980392 && q.armor_color_slot(1,2) == 0.32156863"
+						},
+						{
+							"black_chestplate": "q.armor_texture_slot(1) == 0 && q.armor_color_slot(1,0) == 0.11372550 && q.armor_color_slot(1,1) == 0.11372550 && q.armor_color_slot(1,2) == 0.12941177"
+						},
+						{
+							"brown_chestplate": "q.armor_texture_slot(1) == 0 && q.armor_color_slot(1,0) == 0.51372550 && q.armor_color_slot(1,1) == 0.32941176 && q.armor_color_slot(1,2) > 0.196078459 && q.armor_color_slot(1,2) < 0.196078460"
+						},
+						{
+							"red_chestplate": "q.armor_texture_slot(1) == 0 && q.armor_color_slot(1,0) == 0.69019608 && q.armor_color_slot(1,1) == 0.18039216 && q.armor_color_slot(1,2) == 0.14901961"
+						},
+						{
+							"orange_chestplate": "q.armor_texture_slot(1) == 0 && q.armor_color_slot(1,0) == 0.97647061 && q.armor_color_slot(1,1) == 0.50196078 && q.armor_color_slot(1,2) == 0.11372550"
+						},
+						{
+							"yellow_chestplate": "q.armor_texture_slot(1) == 0 && q.armor_color_slot(1,0) == 0.99607845 && q.armor_color_slot(1,1) == 0.84705884 && q.armor_color_slot(1,2) == 0.23921570"
+						},
+						{
+							"lime_chestplate": "q.armor_texture_slot(1) == 0 && q.armor_color_slot(1,0) == 0.50196078 && q.armor_color_slot(1,1) == 0.78039221 && q.armor_color_slot(1,2) > 0.121568639 && q.armor_color_slot(1,2) < 0.12156864"
+						},
+						{
+							"green_chestplate": "q.armor_texture_slot(1) == 0 && q.armor_color_slot(1,0) > 0.368627469 && q.armor_color_slot(1,0) < 0.36862747 && q.armor_color_slot(1,1) > 0.486274539 && q.armor_color_slot(1,1) < 0.48627454 && q.armor_color_slot(1,2) == 0.08627451"
+						},
+						{
+							"cyan_chestplate": "q.armor_texture_slot(1) == 0 && q.armor_color_slot(1,0) == 0.08627451 && q.armor_color_slot(1,1) == 0.61176471 && q.armor_color_slot(1,2) == 0.61176471"
+						},
+						{
+							"light_blue_chestplate": "q.armor_texture_slot(1) == 0 && q.armor_color_slot(1,0) == 0.22745099 && q.armor_color_slot(1,1) == 0.70196078 && q.armor_color_slot(1,2) == 0.85490197"
+						},
+						{
+							"blue_chestplate": "q.armor_texture_slot(1) == 0 && q.armor_color_slot(1,0) == 0.23529414 && q.armor_color_slot(1,1) == 0.26666667 && q.armor_color_slot(1,2) == 0.66666667"
+						},
+						{
+							"purple_chestplate": "q.armor_texture_slot(1) == 0 && q.armor_color_slot(1,0) == 0.53725491 && q.armor_color_slot(1,1) > 0.196078459 && q.armor_color_slot(1,1) < 0.19607846 && q.armor_color_slot(1,2) == 0.72156863"
+						},
+						{
+							"magenta_chestplate": "q.armor_texture_slot(1) == 0 && q.armor_color_slot(1,0) == 0.78039221 && q.armor_color_slot(1,1) == 0.30588235 && q.armor_color_slot(1,2) == 0.74117647"
+						},
+						{
+							"pink_chestplate": "q.armor_texture_slot(1) == 0 && q.armor_color_slot(1,0) > 0.952941239 && q.armor_color_slot(1,0) < 0.95294124 && q.armor_color_slot(1,1) == 0.54509804 && q.armor_color_slot(1,2) == 0.66666667"
+						},
+						{
+							"undyed_chestplate": "q.armor_texture_slot(1) == 0 && q.armor_color_slot(1,0) == 0.62745099 && q.armor_color_slot(1,1) == 0.39607846 && q.armor_color_slot(1,2) == 0.25098039"
+						}
+					]
+				},
+				"white_chestplate": {
+					"on_entry": ["/scoreboard players set @s leather_chestplate 1"],
+					"transitions": [
+						{
+							"no_matching_chestplate": "q.armor_color_slot(1,0) != 0.94117653 && q.armor_color_slot(1,1) != 0.94117653 && q.armor_color_slot(1,2) != 0.94117653 || q.armor_texture_slot(1) == -1 || !q.is_item_name_any('slot.armor.chest', 'minecraft:leather_chestplate')"
+						}
+					]
+				},
+				"light_gray_chestplate": {
+					"on_entry": ["/scoreboard players set @s leather_chestplate 2"],
+					"transitions": [
+						{
+							"no_matching_chestplate": "q.armor_color_slot(1,0) != 0.61568627 && q.armor_color_slot(1,1) != 0.61568627 && q.armor_color_slot(1,2) != 0.59215686 || q.armor_texture_slot(1) == -1 || !q.is_item_name_any('slot.armor.chest', 'minecraft:leather_chestplate')"
+						}
+					]
+				},
+				"gray_chestplate": {
+					"on_entry": ["/scoreboard players set @s leather_chestplate 3"],
+					"transitions": [
+						{
+							"no_matching_chestplate": "q.armor_color_slot(1,0) != 0.27843138 && q.armor_color_slot(1,1) != 0.30980392 && q.armor_color_slot(1,2) != 0.32156863 || q.armor_texture_slot(1) == -1 || !q.is_item_name_any('slot.armor.chest', 'minecraft:leather_chestplate')"
+						}
+					]
+				},
+				"black_chestplate": {
+					"on_entry": ["/scoreboard players set @s leather_chestplate 4"],
+					"transitions": [
+						{
+							"no_matching_chestplate": "q.armor_color_slot(1,0) != 0.11372550 && q.armor_color_slot(1,1) != 0.11372550 && q.armor_color_slot(1,2) != 0.12941177 || q.armor_texture_slot(1) == -1 || !q.is_item_name_any('slot.armor.chest', 'minecraft:leather_chestplate')"
+						}
+					]
+				},
+				"brown_chestplate": {
+					"on_entry": ["/scoreboard players set @s leather_chestplate 5"],
+					"transitions": [
+						{
+							"no_matching_chestplate": "q.armor_color_slot(1,0) != 0.51372550 && q.armor_color_slot(1,1) != 0.32941176 && q.armor_color_slot(1,2) < 0.196078459 && q.armor_color_slot(1,2) > 0.196078460 || q.armor_texture_slot(1) == -1 || !q.is_item_name_any('slot.armor.chest', 'minecraft:leather_chestplate')"
+						}
+					]
+				},
+				"red_chestplate": {
+					"on_entry": ["/scoreboard players set @s leather_chestplate 6"],
+					"transitions": [
+						{
+							"no_matching_chestplate": "q.armor_color_slot(1,0) != 0.69019608 && q.armor_color_slot(1,1) != 0.18039216 && q.armor_color_slot(1,2) != 0.14901961 || q.armor_texture_slot(1) == -1 || !q.is_item_name_any('slot.armor.chest', 'minecraft:leather_chestplate')"
+						}
+					]
+				},
+				"orange_chestplate": {
+					"on_entry": ["/scoreboard players set @s leather_chestplate 7"],
+					"transitions": [
+						{
+							"no_matching_chestplate": "q.armor_color_slot(1,0) != 0.97647061 && q.armor_color_slot(1,1) != 0.50196078 && q.armor_color_slot(1,2) != 0.11372550 || q.armor_texture_slot(1) == -1 || !q.is_item_name_any('slot.armor.chest', 'minecraft:leather_chestplate')"
+						}
+					]
+				},
+				"yellow_chestplate": {
+					"on_entry": ["/scoreboard players set @s leather_chestplate 8"],
+					"transitions": [
+						{
+							"no_matching_chestplate": "q.armor_color_slot(1,0) != 0.99607845 && q.armor_color_slot(1,1) != 0.84705884 && q.armor_color_slot(1,2) != 0.23921570 || q.armor_texture_slot(1) == -1 || !q.is_item_name_any('slot.armor.chest', 'minecraft:leather_chestplate')"
+						}
+					]
+				},
+				"lime_chestplate": {
+					"on_entry": ["/scoreboard players set @s leather_chestplate 9"],
+					"transitions": [
+						{
+							"no_matching_chestplate": "q.armor_color_slot(1,0) != 0.50196078 && q.armor_color_slot(1,1) != 0.78039221 && q.armor_color_slot(1,2) < 0.121568639 && q.armor_color_slot(1,2) > 0.12156864 || q.armor_texture_slot(1) == -1 || !q.is_item_name_any('slot.armor.chest', 'minecraft:leather_chestplate')"
+						}
+					]
+				},
+				"green_chestplate": {
+					"on_entry": ["/scoreboard players set @s leather_chestplate 10"],
+					"transitions": [
+						{
+							"no_matching_chestplate": "q.armor_color_slot(1,0) < 0.368627469 && q.armor_color_slot(1,0) > 0.36862747 && q.armor_color_slot(1,1) < 0.486274539 && q.armor_color_slot(1,1) > 0.48627454 && q.armor_color_slot(1,2) != 0.08627451 || q.armor_texture_slot(1) == -1 || !q.is_item_name_any('slot.armor.chest', 'minecraft:leather_chestplate')"
+						}
+					]
+				},
+				"cyan_chestplate": {
+					"on_entry": ["/scoreboard players set @s leather_chestplate 11"],
+					"transitions": [
+						{
+							"no_matching_chestplate": "q.armor_color_slot(1,0) != 0.08627451 && q.armor_color_slot(1,1) != 0.61176471 && q.armor_color_slot(1,2) != 0.61176471 || q.armor_texture_slot(1) == -1 || !q.is_item_name_any('slot.armor.chest', 'minecraft:leather_chestplate')"
+						}
+					]
+				},
+				"light_blue_chestplate": {
+					"on_entry": ["/scoreboard players set @s leather_chestplate 12"],
+					"transitions": [
+						{
+							"no_matching_chestplate": "q.armor_color_slot(1,0) != 0.22745099 && q.armor_color_slot(1,1) != 0.70196078 && q.armor_color_slot(1,2) != 0.85490197 || q.armor_texture_slot(1) == -1 || !q.is_item_name_any('slot.armor.chest', 'minecraft:leather_chestplate')"
+						}
+					]
+				},
+				"blue_chestplate": {
+					"on_entry": ["/scoreboard players set @s leather_chestplate 13"],
+					"transitions": [
+						{
+							"no_matching_chestplate": "q.armor_color_slot(1,0) != 0.23529414 && q.armor_color_slot(1,1) != 0.26666667 && q.armor_color_slot(1,2) != 0.66666667 || q.armor_texture_slot(1) == -1 || !q.is_item_name_any('slot.armor.chest', 'minecraft:leather_chestplate')"
+						}
+					]
+				},
+				"purple_chestplate": {
+					"on_entry": ["/scoreboard players set @s leather_chestplate 14"],
+					"transitions": [
+						{
+							"no_matching_chestplate": "q.armor_color_slot(1,0) != 0.53725491 && q.armor_color_slot(1,1) < 0.196078459 && q.armor_color_slot(1,1) > 0.19607846 && q.armor_color_slot(1,2) != 0.72156863 || q.armor_texture_slot(1) == -1 || !q.is_item_name_any('slot.armor.chest', 'minecraft:leather_chestplate')"
+						}
+					]
+				},
+				"magenta_chestplate": {
+					"on_entry": ["/scoreboard players set @s leather_chestplate 15"],
+					"transitions": [
+						{
+							"no_matching_chestplate": "q.armor_color_slot(1,0) != 0.78039221 && q.armor_color_slot(1,1) != 0.30588235 && q.armor_color_slot(1,2) != 0.74117647 || q.armor_texture_slot(1) == -1 || !q.is_item_name_any('slot.armor.chest', 'minecraft:leather_chestplate')"
+						}
+					]
+				},
+				"pink_chestplate": {
+					"on_entry": ["/scoreboard players set @s leather_chestplate 16"],
+					"transitions": [
+						{
+							"no_matching_chestplate": "q.armor_color_slot(1,0) < 0.952941239 && q.armor_color_slot(1,0) > 0.95294124 && q.armor_color_slot(1,1) != 0.54509804 && q.armor_color_slot(1,2) != 0.66666667 || q.armor_texture_slot(1) == -1 || !q.is_item_name_any('slot.armor.chest', 'minecraft:leather_chestplate')"
+						}
+					]
+				},
+				"undyed_chestplate": {
+					"on_entry": ["/scoreboard players set @s leather_chestplate -1"],
+					"transitions": [
+						{
+							"no_matching_chestplate": "q.armor_color_slot(1,0) != 0.62745099 && q.armor_color_slot(1,1) != 0.39607846 && q.armor_color_slot(1,2) != 0.25098039 || q.armor_texture_slot(1) == -1 || !q.is_item_name_any('slot.armor.chest', 'minecraft:leather_chestplate')"
+						}
+					]
+				}
+			}
+		}
+	}
+}

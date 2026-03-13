@@ -1,0 +1,4 @@
+scoreboard objectives add leather_helmet dummy
+scoreboard objectives add leather_chestplate dummy
+scoreboard objectives add leather_leggings dummy
+scoreboard objectives add leather_boots dummy

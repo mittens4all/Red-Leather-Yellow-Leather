@@ -1,0 +1,202 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.leather_boots": {
+			"initial_state": "no_matching_boots",
+			"states": {
+				"no_matching_boots": {
+					"on_entry": ["/scoreboard players set @s leather_boots 0"],
+					"transitions": [
+						{
+							"white_boots": "q.armor_texture_slot(3) == 0 && q.armor_color_slot(3,0) == 0.94117653 && q.armor_color_slot(3,1) == 0.94117653 && q.armor_color_slot(3,2) == 0.94117653"
+						},
+						{
+							"light_gray_boots": "q.armor_texture_slot(3) == 0 && q.armor_color_slot(3,0) == 0.61568627 && q.armor_color_slot(3,1) == 0.61568627 && q.armor_color_slot(3,2) == 0.59215686"
+						},
+						{
+							"gray_boots": "q.armor_texture_slot(3) == 0 && q.armor_color_slot(3,0) == 0.27843138 && q.armor_color_slot(3,1) == 0.30980392 && q.armor_color_slot(3,2) == 0.32156863"
+						},
+						{
+							"black_boots": "q.armor_texture_slot(3) == 0 && q.armor_color_slot(3,0) == 0.11372550 && q.armor_color_slot(3,1) == 0.11372550 && q.armor_color_slot(3,2) == 0.12941177"
+						},
+						{
+							"brown_boots": "q.armor_texture_slot(3) == 0 && q.armor_color_slot(3,0) == 0.51372550 && q.armor_color_slot(3,1) == 0.32941176 && q.armor_color_slot(3,2) > 0.196078459 && q.armor_color_slot(3,2) < 0.196078460"
+						},
+						{
+							"red_boots": "q.armor_texture_slot(3) == 0 && q.armor_color_slot(3,0) == 0.69019608 && q.armor_color_slot(3,1) == 0.18039216 && q.armor_color_slot(3,2) == 0.14901961"
+						},
+						{
+							"orange_boots": "q.armor_texture_slot(3) == 0 && q.armor_color_slot(3,0) == 0.97647061 && q.armor_color_slot(3,1) == 0.50196078 && q.armor_color_slot(3,2) == 0.11372550"
+						},
+						{
+							"yellow_boots": "q.armor_texture_slot(3) == 0 && q.armor_color_slot(3,0) == 0.99607845 && q.armor_color_slot(3,1) == 0.84705884 && q.armor_color_slot(3,2) == 0.23921570"
+						},
+						{
+							"lime_boots": "q.armor_texture_slot(3) == 0 && q.armor_color_slot(3,0) == 0.50196078 && q.armor_color_slot(3,1) == 0.78039221 && q.armor_color_slot(3,2) > 0.121568639 && q.armor_color_slot(3,2) < 0.12156864"
+						},
+						{
+							"green_boots": "q.armor_texture_slot(3) == 0 && q.armor_color_slot(3,0) > 0.368627469 && q.armor_color_slot(3,0) < 0.36862747 && q.armor_color_slot(3,1) > 0.486274539 && q.armor_color_slot(3,1) < 0.48627454 && q.armor_color_slot(3,2) == 0.08627451"
+						},
+						{
+							"cyan_boots": "q.armor_texture_slot(3) == 0 && q.armor_color_slot(3,0) == 0.08627451 && q.armor_color_slot(3,1) == 0.61176471 && q.armor_color_slot(3,2) == 0.61176471"
+						},
+						{
+							"light_blue_boots": "q.armor_texture_slot(3) == 0 && q.armor_color_slot(3,0) == 0.22745099 && q.armor_color_slot(3,1) == 0.70196078 && q.armor_color_slot(3,2) == 0.85490197"
+						},
+						{
+							"blue_boots": "q.armor_texture_slot(3) == 0 && q.armor_color_slot(3,0) == 0.23529414 && q.armor_color_slot(3,1) == 0.26666667 && q.armor_color_slot(3,2) == 0.66666667"
+						},
+						{
+							"purple_boots": "q.armor_texture_slot(3) == 0 && q.armor_color_slot(3,0) == 0.53725491 && q.armor_color_slot(3,1) > 0.196078459 && q.armor_color_slot(3,1) < 0.19607846 && q.armor_color_slot(3,2) == 0.72156863"
+						},
+						{
+							"magenta_boots": "q.armor_texture_slot(3) == 0 && q.armor_color_slot(3,0) == 0.78039221 && q.armor_color_slot(3,1) == 0.30588235 && q.armor_color_slot(3,2) == 0.74117647"
+						},
+						{
+							"pink_boots": "q.armor_texture_slot(3) == 0 && q.armor_color_slot(3,0) > 0.952941239 && q.armor_color_slot(3,0) < 0.95294124 && q.armor_color_slot(3,1) == 0.54509804 && q.armor_color_slot(3,2) == 0.66666667"
+						},
+						{
+							"undyed_boots": "q.armor_texture_slot(3) == 0 && q.armor_color_slot(3,0) == 0.62745099 && q.armor_color_slot(3,1) == 0.39607846 && q.armor_color_slot(3,2) == 0.25098039"
+						}
+					]
+				},
+				"white_boots": {
+					"on_entry": ["/scoreboard players set @s leather_boots 1"],
+					"transitions": [
+						{
+							"no_matching_boots": "q.armor_color_slot(3,0) != 0.94117653 && q.armor_color_slot(3,1) != 0.94117653 && q.armor_color_slot(3,2) != 0.94117653 || q.armor_texture_slot(3) == -1 || !q.is_item_name_any('slot.armor.feet', 'minecraft:leather_boots')"
+						}
+					]
+				},
+				"light_gray_boots": {
+					"on_entry": ["/scoreboard players set @s leather_boots 2"],
+					"transitions": [
+						{
+							"no_matching_boots": "q.armor_color_slot(3,0) != 0.61568627 && q.armor_color_slot(3,1) != 0.61568627 && q.armor_color_slot(3,2) != 0.59215686 || q.armor_texture_slot(3) == -1 || !q.is_item_name_any('slot.armor.feet', 'minecraft:leather_boots')"
+						}
+					]
+				},
+				"gray_boots": {
+					"on_entry": ["/scoreboard players set @s leather_boots 3"],
+					"transitions": [
+						{
+							"no_matching_boots": "q.armor_color_slot(3,0) != 0.27843138 && q.armor_color_slot(3,1) != 0.30980392 && q.armor_color_slot(3,2) != 0.32156863 || q.armor_texture_slot(3) == -1 || !q.is_item_name_any('slot.armor.feet', 'minecraft:leather_boots')"
+						}
+					]
+				},
+				"black_boots": {
+					"on_entry": ["/scoreboard players set @s leather_boots 4"],
+					"transitions": [
+						{
+							"no_matching_boots": "q.armor_color_slot(3,0) != 0.11372550 && q.armor_color_slot(3,1) != 0.11372550 && q.armor_color_slot(3,2) != 0.12941177 || q.armor_texture_slot(3) == -1 || !q.is_item_name_any('slot.armor.feet', 'minecraft:leather_boots')"
+						}
+					]
+				},
+				"brown_boots": {
+					"on_entry": ["/scoreboard players set @s leather_boots 5"],
+					"transitions": [
+						{
+							"no_matching_boots": "q.armor_color_slot(3,0) != 0.51372550 && q.armor_color_slot(3,1) != 0.32941176 && q.armor_color_slot(3,2) < 0.196078459 && q.armor_color_slot(3,2) > 0.196078460 || q.armor_texture_slot(3) == -1 || !q.is_item_name_any('slot.armor.feet', 'minecraft:leather_boots')"
+						}
+					]
+				},
+				"red_boots": {
+					"on_entry": ["/scoreboard players set @s leather_boots 6"],
+					"transitions": [
+						{
+							"no_matching_boots": "q.armor_color_slot(3,0) != 0.69019608 && q.armor_color_slot(3,1) != 0.18039216 && q.armor_color_slot(3,2) != 0.14901961 || q.armor_texture_slot(3) == -1 || !q.is_item_name_any('slot.armor.feet', 'minecraft:leather_boots')"
+						}
+					]
+				},
+				"orange_boots": {
+					"on_entry": ["/scoreboard players set @s leather_boots 7"],
+					"transitions": [
+						{
+							"no_matching_boots": "q.armor_color_slot(3,0) != 0.97647061 && q.armor_color_slot(3,1) != 0.50196078 && q.armor_color_slot(3,2) != 0.11372550 || q.armor_texture_slot(3) == -1 || !q.is_item_name_any('slot.armor.feet', 'minecraft:leather_boots')"
+						}
+					]
+				},
+				"yellow_boots": {
+					"on_entry": ["/scoreboard players set @s leather_boots 8"],
+					"transitions": [
+						{
+							"no_matching_boots": "q.armor_color_slot(3,0) != 0.99607845 && q.armor_color_slot(3,1) != 0.84705884 && q.armor_color_slot(3,2) != 0.23921570 || q.armor_texture_slot(3) == -1 || !q.is_item_name_any('slot.armor.feet', 'minecraft:leather_boots')"
+						}
+					]
+				},
+				"lime_boots": {
+					"on_entry": ["/scoreboard players set @s leather_boots 9"],
+					"transitions": [
+						{
+							"no_matching_boots": "q.armor_color_slot(3,0) != 0.50196078 && q.armor_color_slot(3,1) != 0.78039221 && q.armor_color_slot(3,2) < 0.121568639 && q.armor_color_slot(3,2) > 0.12156864 || q.armor_texture_slot(3) == -1 || !q.is_item_name_any('slot.armor.feet', 'minecraft:leather_boots')"
+						}
+					]
+				},
+				"green_boots": {
+					"on_entry": ["/scoreboard players set @s leather_boots 10"],
+					"transitions": [
+						{
+							"no_matching_boots": "q.armor_color_slot(3,0) < 0.368627469 && q.armor_color_slot(3,0) > 0.36862747 && q.armor_color_slot(3,1) < 0.486274539 && q.armor_color_slot(3,1) > 0.48627454 && q.armor_color_slot(3,2) != 0.08627451 || q.armor_texture_slot(3) == -1 || !q.is_item_name_any('slot.armor.feet', 'minecraft:leather_boots')"
+						}
+					]
+				},
+				"cyan_boots": {
+					"on_entry": ["/scoreboard players set @s leather_boots 11"],
+					"transitions": [
+						{
+							"no_matching_boots": "q.armor_color_slot(3,0) != 0.08627451 && q.armor_color_slot(3,1) != 0.61176471 && q.armor_color_slot(3,2) != 0.61176471 || q.armor_texture_slot(3) == -1 || !q.is_item_name_any('slot.armor.feet', 'minecraft:leather_boots')"
+						}
+					]
+				},
+				"light_blue_boots": {
+					"on_entry": ["/scoreboard players set @s leather_boots 12"],
+					"transitions": [
+						{
+							"no_matching_boots": "q.armor_color_slot(3,0) != 0.22745099 && q.armor_color_slot(3,1) != 0.70196078 && q.armor_color_slot(3,2) != 0.85490197 || q.armor_texture_slot(3) == -1 || !q.is_item_name_any('slot.armor.feet', 'minecraft:leather_boots')"
+						}
+					]
+				},
+				"blue_boots": {
+					"on_entry": ["/scoreboard players set @s leather_boots 13"],
+					"transitions": [
+						{
+							"no_matching_boots": "q.armor_color_slot(3,0) != 0.23529414 && q.armor_color_slot(3,1) != 0.26666667 && q.armor_color_slot(3,2) != 0.66666667 || q.armor_texture_slot(3) == -1 || !q.is_item_name_any('slot.armor.feet', 'minecraft:leather_boots')"
+						}
+					]
+				},
+				"purple_boots": {
+					"on_entry": ["/scoreboard players set @s leather_boots 14"],
+					"transitions": [
+						{
+							"no_matching_boots": "q.armor_color_slot(3,0) != 0.53725491 && q.armor_color_slot(3,1) < 0.196078459 && q.armor_color_slot(3,1) > 0.19607846 && q.armor_color_slot(3,2) != 0.72156863 || q.armor_texture_slot(3) == -1 || !q.is_item_name_any('slot.armor.feet', 'minecraft:leather_boots')"
+						}
+					]
+				},
+				"magenta_boots": {
+					"on_entry": ["/scoreboard players set @s leather_boots 15"],
+					"transitions": [
+						{
+							"no_matching_boots": "q.armor_color_slot(3,0) != 0.78039221 && q.armor_color_slot(3,1) != 0.30588235 && q.armor_color_slot(3,2) != 0.74117647 || q.armor_texture_slot(3) == -1 || !q.is_item_name_any('slot.armor.feet', 'minecraft:leather_boots')"
+						}
+					]
+				},
+				"pink_boots": {
+					"on_entry": ["/scoreboard players set @s leather_boots 16"],
+					"transitions": [
+						{
+							"no_matching_boots": "q.armor_color_slot(3,0) < 0.952941239 && q.armor_color_slot(3,0) > 0.95294124 && q.armor_color_slot(3,1) != 0.54509804 && q.armor_color_slot(3,2) != 0.66666667 || q.armor_texture_slot(3) == -1 || !q.is_item_name_any('slot.armor.feet', 'minecraft:leather_boots')"
+						}
+					]
+				},
+				"undyed_boots": {
+					"on_entry": ["/scoreboard players set @s leather_boots -1"],
+					"transitions": [
+						{
+							"no_matching_boots": "q.armor_color_slot(3,0) != 0.62745099 && q.armor_color_slot(3,1) != 0.39607846 && q.armor_color_slot(3,2) != 0.25098039 || q.armor_texture_slot(3) == -1 || !q.is_item_name_any('slot.armor.feet', 'minecraft:leather_boots')"
+						}
+					]
+				}
+			}
+		}
+	}
+}
