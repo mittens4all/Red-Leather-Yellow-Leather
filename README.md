@@ -1,13 +1,15 @@
 
 # Red Leather Yellow Leather
 
-This behavior pack detects the color of dyed leather armor and converts the color to a scoreboard. You can then run your own commands using the score parameter as part of your target selector.
+This behavior pack detects the color of dyed leather armor and converts the color to a scoreboard.
+You can use the scores target selector argument in your own commands.
 
 ## Installing the pack:
 
-Add the Red Leather Yellow Leather Add-on to your behavior packs on your world. Behavior packs disable achievements, but editing the world with an NBT editor can re-enable achievements when uploading your world to a realm.
+You may dowload the latest release from the [Releases Page](https://github.com/mittens4all/Red-Leather-Yellow-Leather/releases)
 
-Re-enable achievements on either pc or mobile with the free NBT editor [Dovetail](https://github.com/Offroaders123/Dovetail) 
+Add the Red Leather Yellow Leather Add-on to your behavior packs on your world.
+This Behavior Pack modifies the player.json entity file and may cause conflicts with other add-ons that modify this file.
 
 ### How to use the scoreboard
 
@@ -166,8 +168,8 @@ The following example are molang queries for dyed leather helmets.
 
 ```js
        _                              _     _       _ _  
-      (_)  _     _                   | |   (_)     | | | 
- ____  _ _| |_ _| |_ _____ ____   ___| |_____ _____| | | 
+      (_)  _     _                   | |   | |     | | | 
+ ____  _ _| |_ _| |_ _____ ____   ___| |___| |_____| | | 
 |    \| (_   _|_   _) ___ |  _ \ /___)_____  (____ | | | 
 | | | | | | |_  | |_| ____| | | |___ |     | / ___ | | | 
 |_|_|_|_|  \__)  \__)_____)_| |_(___/      |_\_____|\_)_)
