@@ -96,7 +96,7 @@
 					"on_entry": ["/scoreboard players set @s leather_helmet 5"],
 					"transitions": [
 						{
-							"no_matching_helmet": "q.armor_color_slot(0,0) != 0.51372550 && q.armor_color_slot(0,1) != 0.32941176 && q.armor_color_slot(0,2) < 0.196078459 && q.armor_color_slot(0,2) > 0.196078460 || q.armor_texture_slot(0) == -1 || !q.is_item_name_any('slot.armor.head', 'minecraft:leather_helmet')"
+							"no_matching_helmet": "q.armor_color_slot(0,0) != 0.51372550 && q.armor_color_slot(0,1) != 0.32941176 && (q.armor_color_slot(0,2) != 0.196078459 || q.armor_color_slot(0,2) != 0.196078460) || q.armor_texture_slot(0) == -1 || !q.is_item_name_any('slot.armor.head', 'minecraft:leather_helmet')"
 						}
 					]
 				},
@@ -128,7 +128,7 @@
 					"on_entry": ["/scoreboard players set @s leather_helmet 9"],
 					"transitions": [
 						{
-							"no_matching_helmet": "q.armor_color_slot(0,0) != 0.50196078 && q.armor_color_slot(0,1) != 0.78039221 && q.armor_color_slot(0,2) < 0.121568639 && q.armor_color_slot(0,2) > 0.12156864 || q.armor_texture_slot(0) == -1 || !q.is_item_name_any('slot.armor.head', 'minecraft:leather_helmet')"
+							"no_matching_helmet": "q.armor_color_slot(0,0) != 0.50196078 && q.armor_color_slot(0,1) != 0.78039221 && (q.armor_color_slot(0,2) != 0.121568639 || q.armor_color_slot(0,2) != 0.12156864) || q.armor_texture_slot(0) == -1 || !q.is_item_name_any('slot.armor.head', 'minecraft:leather_helmet')"
 						}
 					]
 				},
@@ -136,7 +136,7 @@
 					"on_entry": ["/scoreboard players set @s leather_helmet 10"],
 					"transitions": [
 						{
-							"no_matching_helmet": "q.armor_color_slot(0,0) < 0.368627469 && q.armor_color_slot(0,0) > 0.36862747 && q.armor_color_slot(0,1) < 0.486274539 && q.armor_color_slot(0,1) > 0.48627454 && q.armor_color_slot(0,2) != 0.08627451 || q.armor_texture_slot(0) == -1 || !q.is_item_name_any('slot.armor.head', 'minecraft:leather_helmet')"
+							"no_matching_helmet": "(q.armor_color_slot(0,0) != 0.368627469 || q.armor_color_slot(0,0) != 0.36862747) && (q.armor_color_slot(0,1) != 0.486274539 || q.armor_color_slot(0,1) != 0.48627454) && q.armor_color_slot(0,2) != 0.08627451 || q.armor_texture_slot(0) == -1 || !q.is_item_name_any('slot.armor.head', 'minecraft:leather_helmet')"
 						}
 					]
 				},
@@ -168,7 +168,7 @@
 					"on_entry": ["/scoreboard players set @s leather_helmet 14"],
 					"transitions": [
 						{
-							"no_matching_helmet": "q.armor_color_slot(0,0) != 0.53725491 && q.armor_color_slot(0,1) < 0.196078459 && q.armor_color_slot(0,1) > 0.19607846 && q.armor_color_slot(0,2) != 0.72156863 || q.armor_texture_slot(0) == -1 || !q.is_item_name_any('slot.armor.head', 'minecraft:leather_helmet')"
+							"no_matching_helmet": "q.armor_color_slot(0,0) != 0.53725491 && (q.armor_color_slot(0,1) != 0.196078459 || q.armor_color_slot(0,1) != 0.19607846) && q.armor_color_slot(0,2) != 0.72156863 || q.armor_texture_slot(0) == -1 || !q.is_item_name_any('slot.armor.head', 'minecraft:leather_helmet')"
 						}
 					]
 				},
@@ -184,7 +184,7 @@
 					"on_entry": ["/scoreboard players set @s leather_helmet 16"],
 					"transitions": [
 						{
-							"no_matching_helmet": "q.armor_color_slot(0,0) < 0.952941239 && q.armor_color_slot(0,0) > 0.95294124 && q.armor_color_slot(0,1) != 0.54509804 && q.armor_color_slot(0,2) != 0.66666667 || q.armor_texture_slot(0) == -1 || !q.is_item_name_any('slot.armor.head', 'minecraft:leather_helmet')"
+							"no_matching_helmet": "(q.armor_color_slot(0,0) != 0.952941239 || q.armor_color_slot(0,0) != 0.95294124) && q.armor_color_slot(0,1) != 0.54509804 && q.armor_color_slot(0,2) != 0.66666667 || q.armor_texture_slot(0) == -1 || !q.is_item_name_any('slot.armor.head', 'minecraft:leather_helmet')"
 						}
 					]
 				},

@@ -154,17 +154,19 @@ The following example are molang queries for dyed leather helmets.
 ## Authors
 
 - [@mittens4all](https://www.github.com/mittens4all)
-- [Mittens Youtube](https://www.youtube.com/@mittens4all)
+- [@Mittens Youtube](https://www.youtube.com/@mittens4all)
 
 # Gratitudes
 
-- [JustAsh](https://github.com/Justash01) \\ Bedrock Commands Community Discord
-- [Zhea Evyline](https://discord.gg/SYstTYx5G5) \\ Bedrock Commands Community Discord
-- [Arctic Shark Games](http://www.youtube.com/@ArcticSharkGames)
-- [Zombieclinic](http://www.youtube.com/@zombieclinic6753)
-- [Guppyduck](http://www.youtube.com/@Guppyduck0)
+- [@jeanmajid](https://www.github.com/jeanmajid)
+- [@JustAsh](https://github.com/Justash01)
+- [@zheaEvyline](https://github.com/zheaEvyline)
+- [@Arctic Shark Games](http://www.youtube.com/@ArcticSharkGames)
+- [@Zombieclinic](http://www.youtube.com/@zombieclinic6753)
+- [@Guppyduck](http://www.youtube.com/@Guppyduck0)
 
 - Made for Sylvester Stewart in Guppyduck's Command Central Discord
+- Update to 2.0 for Iris
 
 ```js
        _                              _     _       _ _  
