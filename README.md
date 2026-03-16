@@ -4,6 +4,15 @@
 This behavior pack detects the color of dyed leather armor and converts the color to a scoreboard.
 You can use the scores target selector argument in your own commands.
 
+The pack currently works fully on PC. It has not been tested on Consoles(Xbox/PS/Switch). 
+It only detects the following on mobile (iOS tested so far):
+```
+light gray
+gray
+red
+cyan
+```
+
 ## Installing the pack:
 
 You may dowload the latest release from the [Releases Page](https://github.com/mittens4all/Red-Leather-Yellow-Leather/releases)
