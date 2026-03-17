@@ -8,55 +8,55 @@
 					"on_entry": ["/scoreboard players set @s leather_leggings 0"],
 					"transitions": [
 						{
-							"white_leggings": "q.armor_texture_slot(2) == 0 && q.armor_color_slot(2,0) == 0.94117653 && q.armor_color_slot(2,1) == 0.94117653 && q.armor_color_slot(2,2) == 0.94117653"
+							"white_leggings": "q.armor_texture_slot(2) == 0 && (q.armor_color_slot(2,0) > 0.94 && q.armor_color_slot(2,0) < 0.95) && (q.armor_color_slot(2,1) > 0.94 && q.armor_color_slot(2,1) < 0.95) && (q.armor_color_slot(2,2) > 0.94 && q.armor_color_slot(2,2) < 0.95)"
 						},
 						{
-							"light_gray_leggings": "q.armor_texture_slot(2) == 0 && q.armor_color_slot(2,0) == 0.61568627 && q.armor_color_slot(2,1) == 0.61568627 && q.armor_color_slot(2,2) == 0.59215686"
+							"light_gray_leggings": "q.armor_texture_slot(2) == 0 && (q.armor_color_slot(2,0) > 0.61 && q.armor_color_slot(2,0) < 0.62) && (q.armor_color_slot(2,1) > 0.61 && q.armor_color_slot(2,1) < 0.62) && (q.armor_color_slot(2,2) > 0.59 && q.armor_color_slot(2,2) < 0.60)"
 						},
 						{
-							"gray_leggings": "q.armor_texture_slot(2) == 0 && q.armor_color_slot(2,0) == 0.27843138 && q.armor_color_slot(2,1) == 0.30980392 && q.armor_color_slot(2,2) == 0.32156863"
+							"gray_leggings": "q.armor_texture_slot(2) == 0 && (q.armor_color_slot(2,0) > 0.27 && q.armor_color_slot(2,0) < 0.28) && (q.armor_color_slot(2,1) > 0.30 && q.armor_color_slot(2,1) < 0.31) && (q.armor_color_slot(2,2) > 0.32 && q.armor_color_slot(2,2) < 0.33)"
 						},
 						{
-							"black_leggings": "q.armor_texture_slot(2) == 0 && q.armor_color_slot(2,0) == 0.11372550 && q.armor_color_slot(2,1) == 0.11372550 && q.armor_color_slot(2,2) == 0.12941177"
+							"black_leggings": "q.armor_texture_slot(2) == 0 && (q.armor_color_slot(2,0) > 0.11 && q.armor_color_slot(2,0) < 0.12) && (q.armor_color_slot(2,1) > 0.11 && q.armor_color_slot(2,1) < 0.12) && (q.armor_color_slot(2,2) > 0.12 && q.armor_color_slot(2,2) < 0.13)"
 						},
 						{
-							"brown_leggings": "q.armor_texture_slot(2) == 0 && q.armor_color_slot(2,0) == 0.51372550 && q.armor_color_slot(2,1) == 0.32941176 && q.armor_color_slot(2,2) > 0.196078459 && q.armor_color_slot(2,2) < 0.196078460"
+							"brown_leggings": "q.armor_texture_slot(2) == 0 && (q.armor_color_slot(2,0) > 0.51 && q.armor_color_slot(2,0) < 0.52) && (q.armor_color_slot(2,1) > 0.32 && q.armor_color_slot(2,1) < 0.33) && (q.armor_color_slot(2,2) > 0.19 && q.armor_color_slot(2,2) < 0.20)"
 						},
 						{
-							"red_leggings": "q.armor_texture_slot(2) == 0 && q.armor_color_slot(2,0) == 0.69019608 && q.armor_color_slot(2,1) == 0.18039216 && q.armor_color_slot(2,2) == 0.14901961"
+							"red_leggings": "q.armor_texture_slot(2) == 0 && (q.armor_color_slot(2,0) > 0.69 && q.armor_color_slot(2,0) < 0.70) && (q.armor_color_slot(2,1) > 0.18 && q.armor_color_slot(2,1) < 0.19) && (q.armor_color_slot(2,2) > 0.14 && q.armor_color_slot(2,2) < 0.15)"
 						},
 						{
-							"orange_leggings": "q.armor_texture_slot(2) == 0 && q.armor_color_slot(2,0) == 0.97647061 && q.armor_color_slot(2,1) == 0.50196078 && q.armor_color_slot(2,2) == 0.11372550"
+							"orange_leggings": "q.armor_texture_slot(2) == 0 && (q.armor_color_slot(2,0) > 0.97 && q.armor_color_slot(2,0) < 0.98) && (q.armor_color_slot(2,1) > 0.50 && q.armor_color_slot(2,1) < 0.51) && (q.armor_color_slot(2,2) > 0.11 && q.armor_color_slot(2,2) < 0.12)"
 						},
 						{
-							"yellow_leggings": "q.armor_texture_slot(2) == 0 && q.armor_color_slot(2,0) == 0.99607845 && q.armor_color_slot(2,1) == 0.84705884 && q.armor_color_slot(2,2) == 0.23921570"
+							"yellow_leggings": "q.armor_texture_slot(2) == 0 && (q.armor_color_slot(2,0) > 0.99 && q.armor_color_slot(2,0) < 1.0) && (q.armor_color_slot(2,1) > 0.84 && q.armor_color_slot(2,1) < 0.85) && (q.armor_color_slot(2,2) > 0.23 && q.armor_color_slot(2,2) < 0.24)"
 						},
 						{
-							"lime_leggings": "q.armor_texture_slot(2) == 0 && q.armor_color_slot(2,0) == 0.50196078 && q.armor_color_slot(2,1) == 0.78039221 && q.armor_color_slot(2,2) > 0.121568639 && q.armor_color_slot(2,2) < 0.12156864"
+							"lime_leggings": "q.armor_texture_slot(2) == 0 && (q.armor_color_slot(2,0) > 0.50 && q.armor_color_slot(2,0) < 0.51) && (q.armor_color_slot(2,1) > 0.78 && q.armor_color_slot(2,1) < 0.79) && (q.armor_color_slot(2,2) > 0.12 && q.armor_color_slot(2,2) < 0.13)"
 						},
 						{
-							"green_leggings": "q.armor_texture_slot(2) == 0 && q.armor_color_slot(2,0) > 0.368627469 && q.armor_color_slot(2,0) < 0.36862747 && q.armor_color_slot(2,1) > 0.486274539 && q.armor_color_slot(2,1) < 0.48627454 && q.armor_color_slot(2,2) == 0.08627451"
+							"green_leggings": "q.armor_texture_slot(2) == 0 && (q.armor_color_slot(2,0) > 0.36 && q.armor_color_slot(2,0) < 0.37) && (q.armor_color_slot(2,1) > 0.48 && q.armor_color_slot(2,1) < 0.49) && (q.armor_color_slot(2,2) > 0.08 && q.armor_color_slot(2,2) < 0.09)"
 						},
 						{
-							"cyan_leggings": "q.armor_texture_slot(2) == 0 && q.armor_color_slot(2,0) == 0.08627451 && q.armor_color_slot(2,1) == 0.61176471 && q.armor_color_slot(2,2) == 0.61176471"
+							"cyan_leggings": "q.armor_texture_slot(2) == 0 && (q.armor_color_slot(2,0) > 0.08 && q.armor_color_slot(2,0) < 0.09) && (q.armor_color_slot(2,1) > 0.61 && q.armor_color_slot(2,1) < 0.62) && (q.armor_color_slot(2,2) > 0.61 && q.armor_color_slot(2,2) < 0.62)"
 						},
 						{
-							"light_blue_leggings": "q.armor_texture_slot(2) == 0 && q.armor_color_slot(2,0) == 0.22745099 && q.armor_color_slot(2,1) == 0.70196078 && q.armor_color_slot(2,2) == 0.85490197"
+							"light_blue_leggings": "q.armor_texture_slot(2) == 0 && (q.armor_color_slot(2,0) > 0.22 && q.armor_color_slot(2,0) < 0.23) && (q.armor_color_slot(2,1) > 0.70 && q.armor_color_slot(2,1) < 0.71) && (q.armor_color_slot(2,2) > 0.85 && q.armor_color_slot(2,2) < 0.86)"
 						},
 						{
-							"blue_leggings": "q.armor_texture_slot(2) == 0 && q.armor_color_slot(2,0) == 0.23529414 && q.armor_color_slot(2,1) == 0.26666667 && q.armor_color_slot(2,2) == 0.66666667"
+							"blue_leggings": "q.armor_texture_slot(2) == 0 && (q.armor_color_slot(2,0) > 0.23 && q.armor_color_slot(2,0) < 0.24) && (q.armor_color_slot(2,1) > 0.26 && q.armor_color_slot(2,1) < 0.27) && (q.armor_color_slot(2,2) > 0.66 && q.armor_color_slot(2,2) < 0.67)"
 						},
 						{
-							"purple_leggings": "q.armor_texture_slot(2) == 0 && q.armor_color_slot(2,0) == 0.53725491 && q.armor_color_slot(2,1) > 0.196078459 && q.armor_color_slot(2,1) < 0.19607846 && q.armor_color_slot(2,2) == 0.72156863"
+							"purple_leggings": "q.armor_texture_slot(2) == 0 && (q.armor_color_slot(2,0) > 0.53 && q.armor_color_slot(2,0) < 0.54) && (q.armor_color_slot(2,1) > 0.19 && q.armor_color_slot(2,1) < 0.20) && (q.armor_color_slot(2,2) > 0.72 && q.armor_color_slot(2,2) < 0.73)"
 						},
 						{
-							"magenta_leggings": "q.armor_texture_slot(2) == 0 && q.armor_color_slot(2,0) == 0.78039221 && q.armor_color_slot(2,1) == 0.30588235 && q.armor_color_slot(2,2) == 0.74117647"
+							"magenta_leggings": "q.armor_texture_slot(2) == 0 && (q.armor_color_slot(2,0) > 0.78 && q.armor_color_slot(2,0) < 0.79) && (q.armor_color_slot(2,1) > 0.30 && q.armor_color_slot(2,1) < 0.31) && (q.armor_color_slot(2,2) > 0.74 && q.armor_color_slot(2,2) < 0.75)"
 						},
 						{
-							"pink_leggings": "q.armor_texture_slot(2) == 0 && q.armor_color_slot(2,0) > 0.952941239 && q.armor_color_slot(2,0) < 0.95294124 && q.armor_color_slot(2,1) == 0.54509804 && q.armor_color_slot(2,2) == 0.66666667"
+							"pink_leggings": "q.armor_texture_slot(2) == 0 && (q.armor_color_slot(2,0) > 0.95 && q.armor_color_slot(2,0) < 0.96) && (q.armor_color_slot(2,1) > 0.54 && q.armor_color_slot(2,1) < 0.55) && (q.armor_color_slot(2,2) > 0.66 && q.armor_color_slot(2,2) < 0.67)"
 						},
 						{
-							"undyed_leggings": "q.armor_texture_slot(2) == 0 && q.armor_color_slot(2,0) == 0.62745099 && q.armor_color_slot(2,1) == 0.39607846 && q.armor_color_slot(2,2) == 0.25098039"
+							"undyed_leggings": "q.armor_texture_slot(2) == 0 && (q.armor_color_slot(2,0) > 0.62 && q.armor_color_slot(2,0) < 0.63) && (q.armor_color_slot(2,1) > 0.39 && q.armor_color_slot(2,1) < 0.40) && (q.armor_color_slot(2,2) > 0.25 && q.armor_color_slot(2,2) < 0.26)"
 						}
 					]
 				},
@@ -64,7 +64,7 @@
 					"on_entry": ["/scoreboard players set @s leather_leggings 1"],
 					"transitions": [
 						{
-							"no_matching_leggings": "q.armor_color_slot(2,0) != 0.94117653 && q.armor_color_slot(2,1) != 0.94117653 && q.armor_color_slot(2,2) != 0.94117653 || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
+							"no_matching_leggings": "(q.armor_color_slot(2,0) < 0.94 || q.armor_color_slot(2,0) > 0.95) && (q.armor_color_slot(2,1) < 0.94 || q.armor_color_slot(2,1) > 0.95) && (q.armor_color_slot(2,2) < 0.94 || q.armor_color_slot(2,2) > 0.95) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
 						}
 					]
 				},
@@ -72,7 +72,7 @@
 					"on_entry": ["/scoreboard players set @s leather_leggings 2"],
 					"transitions": [
 						{
-							"no_matching_leggings": "q.armor_color_slot(2,0) != 0.61568627 && q.armor_color_slot(2,1) != 0.61568627 && q.armor_color_slot(2,2) != 0.59215686 || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
+							"no_matching_leggings": "(q.armor_color_slot(2,0) < 0.61 || q.armor_color_slot(2,0) > 0.62) && (q.armor_color_slot(2,1) < 0.61 || q.armor_color_slot(2,1) > 0.62) && (q.armor_color_slot(2,2) < 0.59 || q.armor_color_slot(2,2) > 0.60) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
 						}
 					]
 				},
@@ -80,7 +80,7 @@
 					"on_entry": ["/scoreboard players set @s leather_leggings 3"],
 					"transitions": [
 						{
-							"no_matching_leggings": "q.armor_color_slot(2,0) != 0.27843138 && q.armor_color_slot(2,1) != 0.30980392 && q.armor_color_slot(2,2) != 0.32156863 || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
+							"no_matching_leggings": "(q.armor_color_slot(2,0) < 0.27 || q.armor_color_slot(2,0) > 0.28) && (q.armor_color_slot(2,1) < 0.30 || q.armor_color_slot(2,1) > 0.31) && (q.armor_color_slot(2,2) < 0.32 || q.armor_color_slot(2,2) > 0.33) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
 						}
 					]
 				},
@@ -88,7 +88,7 @@
 					"on_entry": ["/scoreboard players set @s leather_leggings 4"],
 					"transitions": [
 						{
-							"no_matching_leggings": "q.armor_color_slot(2,0) != 0.11372550 && q.armor_color_slot(2,1) != 0.11372550 && q.armor_color_slot(2,2) != 0.12941177 || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
+							"no_matching_leggings": "(q.armor_color_slot(2,0) < 0.11 || q.armor_color_slot(2,0) > 0.12) && (q.armor_color_slot(2,1) < 0.11 || q.armor_color_slot(2,1) > 0.12) && (q.armor_color_slot(2,2) < 0.12 || q.armor_color_slot(2,2) > 0.13) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
 						}
 					]
 				},
@@ -96,7 +96,7 @@
 					"on_entry": ["/scoreboard players set @s leather_leggings 5"],
 					"transitions": [
 						{
-							"no_matching_leggings": "q.armor_color_slot(2,0) != 0.51372550 && q.armor_color_slot(2,1) != 0.32941176 && (q.armor_color_slot(2,2) != 0.196078459 || q.armor_color_slot(2,2) != 0.196078460) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
+							"no_matching_leggings": "(q.armor_color_slot(2,0) < 0.51 || q.armor_color_slot(2,0) > 0.52) && (q.armor_color_slot(2,1) < 0.32 || q.armor_color_slot(2,1) > 0.33) && (q.armor_color_slot(2,2) < 0.19 || q.armor_color_slot(2,2) > 0.20) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
 						}
 					]
 				},
@@ -104,7 +104,7 @@
 					"on_entry": ["/scoreboard players set @s leather_leggings 6"],
 					"transitions": [
 						{
-							"no_matching_leggings": "q.armor_color_slot(2,0) != 0.69019608 && q.armor_color_slot(2,1) != 0.18039216 && q.armor_color_slot(2,2) != 0.14901961 || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
+							"no_matching_leggings": "(q.armor_color_slot(2,0) < 0.69 || q.armor_color_slot(2,0) > 0.70) && (q.armor_color_slot(2,1) < 0.18 || q.armor_color_slot(2,1) > 0.19) && (q.armor_color_slot(2,2) < 0.14 || q.armor_color_slot(2,2) > 0.15) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
 						}
 					]
 				},
@@ -112,7 +112,7 @@
 					"on_entry": ["/scoreboard players set @s leather_leggings 7"],
 					"transitions": [
 						{
-							"no_matching_leggings": "q.armor_color_slot(2,0) != 0.97647061 && q.armor_color_slot(2,1) != 0.50196078 && q.armor_color_slot(2,2) != 0.11372550 || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
+							"no_matching_leggings": "(q.armor_color_slot(2,0) < 0.97 || q.armor_color_slot(2,0) > 0.98) && (q.armor_color_slot(2,1) < 0.50 || q.armor_color_slot(2,1) > 0.51) && (q.armor_color_slot(2,2) < 0.11 || q.armor_color_slot(2,2) > 0.12) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
 						}
 					]
 				},
@@ -120,7 +120,7 @@
 					"on_entry": ["/scoreboard players set @s leather_leggings 8"],
 					"transitions": [
 						{
-							"no_matching_leggings": "q.armor_color_slot(2,0) != 0.99607845 && q.armor_color_slot(2,1) != 0.84705884 && q.armor_color_slot(2,2) != 0.23921570 || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
+							"no_matching_leggings": "(q.armor_color_slot(2,0) < 0.99 || q.armor_color_slot(2,0) > 1.00) && (q.armor_color_slot(2,1) < 0.84 || q.armor_color_slot(2,1) > 0.85) && (q.armor_color_slot(2,2) < 0.23 || q.armor_color_slot(2,2) > 0.24) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
 						}
 					]
 				},
@@ -128,7 +128,7 @@
 					"on_entry": ["/scoreboard players set @s leather_leggings 9"],
 					"transitions": [
 						{
-							"no_matching_leggings": "q.armor_color_slot(2,0) != 0.50196078 && q.armor_color_slot(2,1) != 0.78039221 && (q.armor_color_slot(2,2) != 0.121568639 || q.armor_color_slot(2,2) != 0.12156864) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
+							"no_matching_leggings": "(q.armor_color_slot(2,0) < 0.50 || q.armor_color_slot(2,0) > 0.51) && (q.armor_color_slot(2,1) < 0.78 || q.armor_color_slot(2,1) > 0.70) && (q.armor_color_slot(2,2) < 0.12 || q.armor_color_slot(2,2) > 0.13) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
 						}
 					]
 				},
@@ -136,7 +136,7 @@
 					"on_entry": ["/scoreboard players set @s leather_leggings 10"],
 					"transitions": [
 						{
-							"no_matching_leggings": "(q.armor_color_slot(2,0) != 0.368627469 || q.armor_color_slot(2,0) != 0.36862747) && (q.armor_color_slot(2,1) != 0.486274539 || q.armor_color_slot(2,1) != 0.48627454) && q.armor_color_slot(2,2) != 0.08627451 || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
+							"no_matching_leggings": "(q.armor_color_slot(2,0) < 0.36 || q.armor_color_slot(2,0) > 0.37) && (q.armor_color_slot(2,1) < 0.48 || q.armor_color_slot(2,1) > 0.49) && (q.armor_color_slot(2,2) < 0.08 || q.armor_color_slot(2,2) > 0.09) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
 						}
 					]
 				},
@@ -144,7 +144,7 @@
 					"on_entry": ["/scoreboard players set @s leather_leggings 11"],
 					"transitions": [
 						{
-							"no_matching_leggings": "q.armor_color_slot(2,0) != 0.08627451 && q.armor_color_slot(2,1) != 0.61176471 && q.armor_color_slot(2,2) != 0.61176471 || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
+							"no_matching_leggings": "(q.armor_color_slot(2,0) < 0.08 || q.armor_color_slot(2,0) > 0.09) && (q.armor_color_slot(2,1) < 0.61 || q.armor_color_slot(2,1) > 0.62) && (q.armor_color_slot(2,2) < 0.61 || q.armor_color_slot(2,2) > 0.62) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
 						}
 					]
 				},
@@ -152,7 +152,7 @@
 					"on_entry": ["/scoreboard players set @s leather_leggings 12"],
 					"transitions": [
 						{
-							"no_matching_leggings": "q.armor_color_slot(2,0) != 0.22745099 && q.armor_color_slot(2,1) != 0.70196078 && q.armor_color_slot(2,2) != 0.85490197 || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
+							"no_matching_leggings": "(q.armor_color_slot(2,0) < 0.22 || q.armor_color_slot(2,0) > 0.23) && (q.armor_color_slot(2,1) < 0.70 || q.armor_color_slot(2,1) > 0.71) && (q.armor_color_slot(2,2) < 0.85 || q.armor_color_slot(2,2) > 0.86) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
 						}
 					]
 				},
@@ -160,7 +160,7 @@
 					"on_entry": ["/scoreboard players set @s leather_leggings 13"],
 					"transitions": [
 						{
-							"no_matching_leggings": "q.armor_color_slot(2,0) != 0.23529414 && q.armor_color_slot(2,1) != 0.26666667 && q.armor_color_slot(2,2) != 0.66666667 || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
+							"no_matching_leggings": "(q.armor_color_slot(2,0) < 0.23 || q.armor_color_slot(2,0) > 0.24) && (q.armor_color_slot(2,1) < 0.26 || q.armor_color_slot(2,1) > 0.27) && (q.armor_color_slot(2,2) < 0.66 || q.armor_color_slot(2,2) > 0.67) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
 						}
 					]
 				},
@@ -168,7 +168,7 @@
 					"on_entry": ["/scoreboard players set @s leather_leggings 14"],
 					"transitions": [
 						{
-							"no_matching_leggings": "q.armor_color_slot(2,0) != 0.53725491 && (q.armor_color_slot(2,1) != 0.196078459 || q.armor_color_slot(2,1) != 0.19607846) && q.armor_color_slot(2,2) != 0.72156863 || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
+							"no_matching_leggings": "(q.armor_color_slot(2,0) < 0.53 || q.armor_color_slot(2,0) > 0.54) && (q.armor_color_slot(2,1) < 0.19 || q.armor_color_slot(2,1) > 0.20) && (q.armor_color_slot(2,2) < 0.72 || q.armor_color_slot(2,2) > 0.73) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
 						}
 					]
 				},
@@ -176,7 +176,7 @@
 					"on_entry": ["/scoreboard players set @s leather_leggings 15"],
 					"transitions": [
 						{
-							"no_matching_leggings": "q.armor_color_slot(2,0) != 0.78039221 && q.armor_color_slot(2,1) != 0.30588235 && q.armor_color_slot(2,2) != 0.74117647 || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
+							"no_matching_leggings": "(q.armor_color_slot(2,0) < 0.78 || q.armor_color_slot(2,0) > 0.79) && (q.armor_color_slot(2,1) < 0.30 || q.armor_color_slot(2,1) > 0.31) && (q.armor_color_slot(2,2) < 0.74 || q.armor_color_slot(2,2) < 0.75) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
 						}
 					]
 				},
@@ -184,7 +184,7 @@
 					"on_entry": ["/scoreboard players set @s leather_leggings 16"],
 					"transitions": [
 						{
-							"no_matching_leggings": "(q.armor_color_slot(2,0) != 0.952941239 || q.armor_color_slot(2,0) != 0.95294124) && q.armor_color_slot(2,1) != 0.54509804 && q.armor_color_slot(2,2) != 0.66666667 || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
+							"no_matching_leggings": "(q.armor_color_slot(2,0) < 0.95 || q.armor_color_slot(2,0) > 0.96) && (q.armor_color_slot(2,1) < 0.54 || q.armor_color_slot(2,1) > 0.55) && (q.armor_color_slot(2,2) < 0.66 || q.armor_color_slot(2,2) > 0.67) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
 						}
 					]
 				},
@@ -192,7 +192,7 @@
 					"on_entry": ["/scoreboard players set @s leather_leggings -1"],
 					"transitions": [
 						{
-							"no_matching_leggings": "q.armor_color_slot(2,0) != 0.62745099 && q.armor_color_slot(2,1) != 0.39607846 && q.armor_color_slot(2,2) != 0.25098039 || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
+							"no_matching_leggings": "(q.armor_color_slot(2,0) < 0.62 || q.armor_color_slot(2,0) > 0.63) && (q.armor_color_slot(2,1) < 0.39 || q.armor_color_slot(2,1) > 0.40) && (q.armor_color_slot(2,2) < 0.25 || q.armor_color_slot(2,2) > 0.26) || q.armor_texture_slot(2) == -1 || !q.is_item_name_any('slot.armor.legs', 'minecraft:leather_leggings')"
 						}
 					]
 				}
