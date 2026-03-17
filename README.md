@@ -4,14 +4,7 @@
 This behavior pack detects the color of dyed leather armor and converts the color to a scoreboard.
 You can use the scores target selector argument in your own commands.
 
-The pack currently works fully on PC. It has not been tested on Consoles(Xbox/PS/Switch). 
-It only detects the following on mobile (iOS tested so far):
-```
-light gray
-gray
-red
-cyan
-```
+The pack fully works on PC and Mobile (iOS tested so far). It has not been tested on console.
 
 ## Installing the pack:
 
@@ -102,63 +95,7 @@ Some colors do not have exact matches due to recurring decimals:
 * Purple G / 255 value: q.armor_color_slot(0,1) > 0.196078459 && q.armor_color_slot(0,1) < 0.19607846
 *   Pink R / 255 value: q.armor_color_slot(0,0) > 0.952941239 && q.armor_color_slot(0,0) < 0.95294124
 
-## Molang Query
-
-The following example are molang queries for dyed leather helmets. 
-
-```json
-{
-     "white_helmet": "q.armor_texture_slot(0) == 0 && q.armor_color_slot(0,0) == 0.94117653 && q.armor_color_slot(0,1) == 0.94117653 && q.armor_color_slot(0,2) == 0.94117653"
-},
-{
-     "light_gray_helmet": "q.armor_texture_slot(0) == 0 && q.armor_color_slot(0,0) == 0.61568627 && q.armor_color_slot(0,1) == 0.61568627 && q.armor_color_slot(0,2) == 0.59215686"
-},
-{
-     "gray_helmet": "q.armor_texture_slot(0) == 0 && q.armor_color_slot(0,0) == 0.27843138 && q.armor_color_slot(0,1) == 0.30980392 && q.armor_color_slot(0,2) == 0.32156863"
-},
-{
-     "black_helmet": "q.armor_texture_slot(0) == 0 && q.armor_color_slot(0,0) == 0.11372550 && q.armor_color_slot(0,1) == 0.11372550 && q.armor_color_slot(0,2) == 0.12941177"
-},
-{
-     "brown_helmet": "q.armor_texture_slot(0) == 0 && q.armor_color_slot(0,0) == 0.51372550 && q.armor_color_slot(0,1) == 0.32941176 && q.armor_color_slot(0,2) > 0.196078459 && q.armor_color_slot(0,2) < 0.196078460"
-},
-{
-     "red_helmet": "q.armor_texture_slot(0) == 0 && q.armor_color_slot(0,0) == 0.69019608 && q.armor_color_slot(0,1) == 0.18039216 && q.armor_color_slot(0,2) == 0.14901961"
-},
-{
-     "orange_helmet": "q.armor_texture_slot(0) == 0 && q.armor_color_slot(0,0) == 0.97647061 && q.armor_color_slot(0,1) == 0.50196078 && q.armor_color_slot(0,2) == 0.11372550"
-},
-{
-     "yellow_helmet": "q.armor_texture_slot(0) == 0 && q.armor_color_slot(0,0) == 0.99607845 && q.armor_color_slot(0,1) == 0.84705884 && q.armor_color_slot(0,2) == 0.23921570"
-},
-{
-     "lime_helmet": "q.armor_texture_slot(0) == 0 && q.armor_color_slot(0,0) == 0.50196078 && q.armor_color_slot(0,1) == 0.78039221 && q.armor_color_slot(0,2) > 0.121568639 && q.armor_color_slot(0,2) < 0.12156864"
-},
-{
-     "green_helmet": "q.armor_texture_slot(0) == 0 && q.armor_color_slot(0,0) > 0.368627469 && q.armor_color_slot(0,0) < 0.36862747 && q.armor_color_slot(0,1) > 0.486274539 && q.armor_color_slot(0,1) < 0.48627454 && q.armor_color_slot(0,2) == 0.08627451"
-},
-{
-     "cyan_helmet": "q.armor_texture_slot(0) == 0 && q.armor_color_slot(0,0) == 0.08627451 && q.armor_color_slot(0,1) == 0.61176471 && q.armor_color_slot(0,2) == 0.61176471"
-},
-{
-     "light_blue_helmet": "q.armor_texture_slot(0) == 0 && q.armor_color_slot(0,0) == 0.22745099 && q.armor_color_slot(0,1) == 0.70196078 && q.armor_color_slot(0,2) == 0.85490197"
-},
-{
-     "blue_helmet": "q.armor_texture_slot(0) == 0 && q.armor_color_slot(0,0) == 0.23529414 && q.armor_color_slot(0,1) == 0.26666667 && q.armor_color_slot(0,2) == 0.66666667"
-},
-{
-     "purple_helmet": "q.armor_texture_slot(0) == 0 && q.armor_color_slot(0,0) == 0.53725491 && q.armor_color_slot(0,1) > 0.196078459 && q.armor_color_slot(0,1) < 0.19607846 && q.armor_color_slot(0,2) == 0.72156863"
-},
-{
-     "magenta_helmet": "q.armor_texture_slot(0) == 0 && q.armor_color_slot(0,0) == 0.78039221 && q.armor_color_slot(0,1) == 0.30588235 && q.armor_color_slot(0,2) == 0.74117647"
-},
-{
-     "pink_helmet": "q.armor_texture_slot(0) == 0 && q.armor_color_slot(0,0) > 0.952941239 && q.armor_color_slot(0,0) < 0.95294124 && q.armor_color_slot(0,1) == 0.54509804 && q.armor_color_slot(0,2) == 0.66666667"
-},
-{
-     "undyed_helmet": "q.armor_texture_slot(0) == 0 && q.armor_color_slot(0,0) == 0.62745099 && q.armor_color_slot(0,1) == 0.39607846 && q.armor_color_slot(0,2) == 0.25098039"
-}
-```
+Version 2.1.0 uses greater than and lesser than values at only two decimal places for better performance and compatibility with more devices, since each device handles floating points differently.
 
 ## Authors
 
@@ -175,7 +112,7 @@ The following example are molang queries for dyed leather helmets.
 - [@Guppyduck](http://www.youtube.com/@Guppyduck0)
 
 - Made for Sylvester Stewart in Guppyduck's Command Central Discord
-- Update to 2.0 for Iris
+- Update to 2.1 for Iris
 
 ```js
        _                              _     _       _ _  

@@ -1,10 +1,10 @@
 {
     "format_version": 2,
     "header": {
-        "description": "v2.0.1 - Pack by Mittens4all - Detect Color of Dyed Leather Armor",
+        "description": "v2.1.0 - Pack by Mittens4all - Detect Color of Dyed Leather Armor",
         "name": "Red Leather Yellow Leather",
         "uuid": "44a7204e-a8f0-4f06-ab99-cc5d57ed25ba",
-        "version": [ 2, 0, 1 ],
+        "version": [ 2, 1, 0 ],
         "min_engine_version": [ 1, 26, 0 ]
     },
     "modules": [
